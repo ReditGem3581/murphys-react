@@ -4,26 +4,28 @@ import { Container, Row, Col } from "react-bootstrap";
 
 export default function Footer() {
   return (
-    <footer>
-      <Container fluid style={{ backgroundColor: "#1B4F24" }}>
-        <Container>
-          <Row className="py-4">
-            <Col md>
-              <h5>About</h5>
-              <p className="mb-0">Local pub serving great food and beer since 1987.</p>
-            </Col>
-            <Col md>
-              <h5>Location</h5>
-              <p className="mb-0">2 Merchant St, Honolulu, HI</p>
-              <p className="mb-0">Mon–Sun: 11am – 10pm</p>
-            </Col>
-            <Col md>
-              <h5>Contact</h5>
-              <p className="mb-0">(808) 531-0422</p>
-              <p className="mb-0">info@murphys.com</p>
-            </Col>
-          </Row>
-        </Container>
+    <footer className="footer mt-auto py-3" id="bottomMenu">
+      <Container>
+        <Row>
+          <Col>
+            <strong>Lunch</strong>
+            <hr />
+            Monday - Friday: 11:00am - 2:30pm<br />
+            Saturday - Sunday: Not open
+          </Col>
+          <Col>
+            <strong>Bar</strong>
+            <hr />
+            Monday - Friday: From 11:00am to closing<br />
+            Saturday - Sunday: Not open
+          </Col>
+          <Col>
+            <strong>Dinner</strong>
+            <hr />
+            Monday - Friday: 5:00pm - 9:00pm<br />
+            Saturday - Sunday: Not open
+          </Col>
+        </Row>
       </Container>
     </footer>
   );

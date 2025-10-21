@@ -8,6 +8,10 @@ body {
   --bs-nav-link-color: white;
 }
 
+.nav-link:hover {
+  color: #0d6efd !important;
+}
+
 #topMenu, #bottomMenu {
   background-color: #1B4F24;
 }

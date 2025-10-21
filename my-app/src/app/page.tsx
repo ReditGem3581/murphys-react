@@ -1,18 +1,15 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./style.css";
-import { Container } from "react-bootstrap";
 import TopMenu from "@/components/TopMenu";
 import MiddleSection from "@/components/MiddleSection";
 import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main>
-      <Container>
-        <TopMenu />
-      </Container>
+    <div className="d-flex flex-column min-vh-100">
+      <TopMenu />
       <MiddleSection />
       <Footer />
-    </main>
+    </div>
   );
 }

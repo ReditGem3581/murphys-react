@@ -2,24 +2,30 @@
 
 import Image from "next/image";
 import { Navbar, Nav, Container } from "react-bootstrap";
+import { Instagram, Facebook, Twitter } from "react-bootstrap-icons";
 
 export default function TopMenu() {
   return (
-    <Navbar expand="lg" style={{ backgroundColor: "#1B4F24" }} data-bs-theme="dark">
-      <Container>
-        <Navbar.Brand href="#home" className="d-flex align-items-center">
-          <Image src="/murphyslogowhite.png" alt="Murphy's" width={120} height={30} />
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="main-navbar" />
-        <Navbar.Collapse id="main-navbar" className="justify-content-end">
-          <Nav>
-            <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link href="#menu">Menu</Nav.Link>
-            <Nav.Link href="#reservations">Reservations</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <div className="px-0 justify-content-center pb-2" id="topMenu">
+      <Navbar expand="lg" variant="dark">
+        <Container>
+          <Navbar.Brand href="#">
+            <Image src="/murphyslogowhite.png" alt="Murphy's" width={200} height={50} />
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="main-navbar" />
+          <Navbar.Collapse id="main-navbar">
+            <Nav className="ms-auto">
+              <Nav.Link href="#home">Home</Nav.Link>
+              <Nav.Link href="#about">About Us</Nav.Link>
+              <Nav.Link href="#stpatricks">St. Patrick&apos;s Day</Nav.Link>
+              <Nav.Link href="#ordering">To Go Ordering</Nav.Link>
+              <Nav.Link href="#instagram"><Instagram /></Nav.Link>
+              <Nav.Link href="#facebook"><Facebook /></Nav.Link>
+              <Nav.Link href="#twitter"><Twitter /></Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </div>
   );
 }
